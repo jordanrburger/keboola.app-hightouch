@@ -48,7 +48,7 @@ class Component(ComponentBase):
         if endpoint == "Run Sync":
             sync_id = params.get(KEY_SYNC_ID)
             response = client.run_sync(sync_id)
-            logging.logger.info(response)
+            logging.info(response)
 
 
 if __name__ == "__main__":
